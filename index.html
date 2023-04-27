@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Home Page</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        function Nav(){
+            return <div style={{display:'flex',justifyContent:'space-around',alignItems:'center',backgroundColor:'burlywood'}}>
+                    <div>
+                    <h1>LOGO</h1>    
+                    </div>
+                    <div>
+                        <a href='#' style={{color:'black',textDecoration:'none',margin:'15px'}}><b>Home</b></a> 
+                        <a href='#' style={{color:'black',textDecoration:'none',margin:'15px'}}><b>About</b></a>  
+                        <a href='#' style={{color:'black',textDecoration:'none',margin:'15px'}}><b>Contact</b></a> 
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-facebook-f" style={{cursor:'pointer'}}></i> &nbsp;
+                        <i class="fa-brands fa-twitter" style={{cursor:'pointer'}}></i> &nbsp;
+                        <i class="fa-brands fa-instagram" style={{cursor:'pointer'}}></i> &nbsp;
+                    </div>
+                </div>
+        }
+        function Main(){
+             return <div style={{display:'flex',margin:'15px',textAlign:'center'}}>
+                <div>
+                    <h2>Header</h2>
+                    <h2>Footer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rerum esse totam, pariatur delectus beatae rem eum aperiam veniam provident ea sunt fuga minima dicta ratione et nam nesciunt perferendis neque. Reiciendis laboriosam doloremque, qui dolore dolorem quod harum atque dolores officia facilis. Tempora temporibus nostrum sapiente laborum, ducimus molestias facere deserunt perspiciatis tempore eligendi ad mollitia veritatis voluptatum quae optio nesciunt inventore autem modi sed. Soluta similique minima, voluptates deserunt unde non voluptatum eveniet, illo, quis ipsam neque accusantium? Inventore tempore alias eaque quibusdam eos laboriosam ipsam sed, quisquam, sapiente vel perferendis nostrum architecto iure ullam quam accusantium officia!</p>  
+                </div>
+                <div>
+                    <img src='https://cdn.pixabay.com/photo/2015/01/07/15/51/woman-591576__340.jpg' alt='happy image'/>
+                </div>
+                </div>
+        }
+        function Footer(){
+             return <div style={{backgroundColor:'black',color:'white',display:'flex',justifyContent:'space-around',gap:'25px',textAlign:'center'}}>
+                <div>
+                    <h2>Block header</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur rem iure consequuntur. Deserunt incidunt laboriosam nisi labore assumenda quaerat numquam exercitationem delectus nemo officiis odit cupiditate porro natus, dolorem amet possimus suscipit doloribus voluptate, tempore harum illum! Optio, voluptatum sapiente!</p>
+                </div>
+                <div>
+                    <h2>Block header</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia cumque velit est sunt minima? Est, deserunt? Quibusdam excepturi voluptatem eligendi placeat expedita vel assumenda accusantium, dolorum magni suscipit impedit libero nihil quo iure tempore eaque odio voluptatibus culpa accusamus molestias.</p>
+                </div>
+                <div>
+                    <h2>Block header</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate labore nesciunt aliquam maxime impedit quibusdam in corrupti, temporibus quis ea cupiditate officiis rem vitae enim iure pariatur assumenda facilis, delectus ducimus cum, totam id qui autem molestias. Harum, vel? Delectus?</p>
+                </div>
+                </div>
+        }
+        function App(){
+            return <div>
+                <Nav/>
+                <Main/>
+                <Footer/>
+                </div>
+        }
+        ReactDOM.render(<App/>,document.getElementById('root'))
+    </script>
+</body>
+</html>
